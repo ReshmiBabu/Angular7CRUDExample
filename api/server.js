@@ -11,7 +11,7 @@ mongoose.connect(config.DB, { useNewUrlParser: true }).then(
   () => {console.log('Database is connected') },
   err => { console.log('Cannot connect to the database'+ err)}
 );
-var version=process.env.vers || "1.0"
+var version=process.en.version || "1.0"
 
 const app = express();
 app.use(bodyParser.json());
